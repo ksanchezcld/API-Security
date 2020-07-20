@@ -1,0 +1,23 @@
+Securing an API is a critical task. A poor API design may lead to system compromise. Its impact becomes more critical when sensitive user information is exposed by the API.
+
+A Chat WebApp allows anyone to view the name and avatar of any user registered on the app. The API was not well-designed and relied on the client to perform data filtering instead of sending only required details.
+
+One of the registered app users, having the name "Brian Thomas" had set only 2 security questions to be answered before resetting his password and that information was revealed by the API due to improper API design.
+
+This challenge is focused on leveraging Excessive Data Exposure in the application.
+
+Objective: Hijack the account of the user named "Brian Thomas" and retrieve the Golden Ticket!
+
+User Information:
+          Name          
+	Brian Thomas
+Email
+	brianthomas@chat-api.com
+
+Instructions: 
+
+    This lab is dedicated to you! No other users are on this network :)
+    Once you start the lab, you will have access to a Kali GUI instance.
+    Your Kali instance has an interface with IP address 192.X.Y.2. Run "ifconfig" to know the values of X and Y.
+    The Chat WebApp is running on port 5000 on the target machine having IP address 192.X.Y.3.
+    Do not attack the gateway located at IP address 192.X.Y.1

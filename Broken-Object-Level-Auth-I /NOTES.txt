@@ -1,0 +1,39 @@
+===========================
+Broken Object Level Auth I 
+===========================
+
+Securing an API is a critical task. A poor API design may lead to system compromise. Its impact becomes more critical when a crucial service gets affected like a Banking API.
+
+The Banking WebApp provides its customers, the ability to view their balances. The authorization system is not implemented properly and allows any user to read the account balance of all the other users.
+
+This challenge is focused on leveraging the Broken Object Level Authorization in the Banking API.
+
+Objective: Retrieve the account balance of the user named "James Cooper"!
+
+User Information:
+Username ::   elliot
+Password ::   elliotalderson
+
+API Endpoints:
+Endpoint
+	Description
+	Method
+	Parameter(s)
+/issue
+	Issue a JWT Token used as an authorization mechanism
+	POST
+	identifier, password
+/balance
+	Read the balance of an account
+	GET
+	acct, token
+
+Instructions: 
+
+    This lab is dedicated to you! No other users are on this network :)
+    Once you start the lab, you will have access to a Kali GUI instance.
+    Your Kali instance has an interface with IP address 192.X.Y.2. Run "ifconfig" to know the values of X and Y.
+    
+    - The Banking WebApp is running on port 5000 on the target machine having IP address 192.X.Y.3.
+    - The account number is a 4-digit number, ranging from 1000 to 9999 inclusive.
+    - Do not attack the gateway located at IP address 192.X.Y.1
