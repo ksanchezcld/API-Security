@@ -20,6 +20,6 @@ for word in wordlist:
     if "Error" not in res:
         print('*'*10)
         print("Username: Admin")
-        print(password {}).format(word)
+        print(password, {}).format(word)
         print('*'*10)
         print ("Login Response:\n", res)
